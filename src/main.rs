@@ -17,7 +17,6 @@ enum Route {
 fn main() {
     // Init debug
     dioxus_logger::init(LevelFilter::Info).expect("failed to init logger");
-
     launch(App);
 }
 
