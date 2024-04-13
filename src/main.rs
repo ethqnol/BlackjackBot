@@ -40,16 +40,12 @@ fn Home() -> Element {
     let mut text = use_signal(|| String::from("..."));
 
     rsx! {
-        Link {
-            to: Route::Blog {
-                id: count()
-            },
-            "Go to blog"
-        }
         div {
             h1 { "High-Five counter: {count}" }
             button { onclick: move |_| count += 1, "Up high!" }
-            button { onclick: move |_| count -= 1, "Down low!" }
+            button { onclick: move |_| count += 5, "add 5!" }
+            button { onclick: move |_| count /= 3, "Decimal Points"}
+
             button {
                 onclick: move |_| async move {
                     if let Ok(data) = server::get_server_data().await {
