@@ -39,62 +39,62 @@ impl Card {
 struct Deck {}
 
 impl Deck {
-    const  king_club : Card = Card { value : 10, face : CardType::King, suit : Suits::Club, is_ace : false};
-    const  king_heart : Card = Card { value : 10, face : CardType::King, suit : Suits::Heart, is_ace : false};
-    const  king_spade : Card = Card { value : 10, face : CardType::King, suit : Suits::Spade, is_ace : false};
-    const  king_diam : Card = Card { value : 10, face : CardType::King, suit : Suits::Diamond, is_ace : false};
-    const  queen_club : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Club, is_ace : false};
-    const  queen_spade : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Spade, is_ace : false};
-    const  queen_heart : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Heart, is_ace : false};
-    const  queen_diam : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Diamond, is_ace : false};
-    const  jack_club : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Club, is_ace : false};
-    const  jack_spade : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Spade, is_ace : false};
-    const  jack_heart : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Heart, is_ace : false};
-    const  jack_diam : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Diamond, is_ace : false};
-    const  ten_diam : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Diamond, is_ace : false};
-    const  ten_heart : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Heart, is_ace : false};
-    const  ten_spade : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Spade, is_ace : false};
-    const  ten_club : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Club, is_ace : false};
-    const  nine_club : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Club, is_ace : false};
-    const  nine_heart : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Heart, is_ace : false};
-    const  nine_spade : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Spade, is_ace : false};
-    const  nine_diam : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Diamond, is_ace : false};
-    const  eight_diam : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Diamond, is_ace : false};
-    const  eight_spade : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Spade, is_ace : false};
-    const  eight_club : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Club, is_ace : false};
-    const  eight_heart : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Heart, is_ace : false};
-    const  seven_heart : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Heart, is_ace : false};
-    const  seven_spade : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Spade, is_ace : false};
-    const  seven_club : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Club, is_ace : false};
-    const  seven_diam : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Diamond, is_ace : false};
-    const  six_spade : Card = Card {value: 6, face: CardType::Six, suit : Suits::Spade, is_ace : false};
-    const  six_heart : Card = Card {value: 6, face: CardType::Six, suit : Suits::Heart, is_ace : false};
-    const  six_diam : Card = Card {value: 6, face: CardType::Six, suit : Suits::Diamond, is_ace : false};
-    const  six_club : Card = Card {value: 6, face: CardType::Six, suit : Suits::Club, is_ace : false};
-    const  five_club : Card = Card {value: 5, face: CardType::Five, suit : Suits::Club, is_ace : false};
-    const  five_heart : Card = Card {value: 5, face: CardType::Five, suit : Suits::Heart, is_ace : false};
-    const  five_spade : Card = Card {value: 5, face: CardType::Five, suit : Suits::Spade, is_ace : false};
-    const  five_diam : Card = Card {value: 5, face: CardType::Five, suit : Suits::Diamond, is_ace : false};
-    const  four_diam : Card = Card {value: 4, face: CardType::Four, suit : Suits::Diamond, is_ace : false};
-    const  four_spade : Card = Card {value: 4, face: CardType::Four, suit : Suits::Spade, is_ace : false};
-    const  four_heart : Card = Card {value: 4, face: CardType::Four, suit : Suits::Heart, is_ace : false};
-    const  four_club : Card = Card {value: 4, face: CardType::Four, suit : Suits::Club, is_ace : false};
-    const  three_club : Card = Card {value: 3, face: CardType::Three, suit : Suits::Club, is_ace : false};
-    const  three_spade : Card = Card {value: 3, face: CardType::Three, suit : Suits::Spade, is_ace : false};
-    const  three_heart : Card = Card {value: 3, face: CardType::Three, suit : Suits::Heart, is_ace : false};
-    const  three_diamond : Card = Card {value: 3, face: CardType::Three, suit : Suits::Diamond, is_ace : false};
-    const  two_diamond : Card = Card {value: 2, face: CardType::Two, suit : Suits::Diamond, is_ace : false};
-    const  two_heart : Card = Card {value: 2, face: CardType::Two, suit : Suits::Heart, is_ace : false};
-    const  two_spade : Card = Card {value: 2, face: CardType::Two, suit : Suits::Spade, is_ace : false};
-    const  two_club : Card = Card {value: 2, face: CardType::Two, suit : Suits::Club, is_ace : false};
-    const  ace_diamond : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Diamond, is_ace : true};
-    const  ace_heart : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Heart, is_ace : true};
-    const  ace_spade : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Spade, is_ace : true};
-    const  ace_club : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Club, is_ace : true};
+    const  KING_CLUB : Card = Card { value : 10, face : CardType::King, suit : Suits::Club, is_ace : false};
+    const  KING_HEART : Card = Card { value : 10, face : CardType::King, suit : Suits::Heart, is_ace : false};
+    const  KING_SPADE  : Card = Card { value : 10, face : CardType::King, suit : Suits::Spade, is_ace : false};
+    const  KING_DIA : Card = Card { value : 10, face : CardType::King, suit : Suits::Diamond, is_ace : false};
+    const  QUEEN_CLUB : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Club, is_ace : false};
+    const  QUEEN_SPADE : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Spade, is_ace : false};
+    const  QUEEN_HEART : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Heart, is_ace : false};
+    const  QUEEN_DIA : Card = Card {value: 10, face: CardType::Queen, suit : Suits::Diamond, is_ace : false};
+    const  JACK_CLUB : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Club, is_ace : false};
+    const  JACK_SPADE : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Spade, is_ace : false};
+    const  JACK_HEART : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Heart, is_ace : false};
+    const  JACK_DIAM : Card = Card {value: 10, face: CardType::Jack, suit : Suits::Diamond, is_ace : false};
+    const  TEN_DIAM : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Diamond, is_ace : false};
+    const  TEN_HEART : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Heart, is_ace : false};
+    const  TEN_SPADE : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Spade, is_ace : false};
+    const  TEN_CLUB : Card = Card {value: 10, face: CardType::Ten, suit : Suits::Club, is_ace : false};
+    const  NINE_CLUB : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Club, is_ace : false};
+    const  NINE_HEART : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Heart, is_ace : false};
+    const  NINE_SPADE : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Spade, is_ace : false};
+    const  NINE_DIA : Card = Card {value: 9, face: CardType::Nine, suit : Suits::Diamond, is_ace : false};
+    const  EIGHT_DIA : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Diamond, is_ace : false};
+    const  EIGHT_SPADE : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Spade, is_ace : false};
+    const  EIGHT_CLUB : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Club, is_ace : false};
+    const  EIGHT_HEART : Card = Card {value: 8, face: CardType::Eight, suit : Suits::Heart, is_ace : false};
+    const  SEVEN_HEART : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Heart, is_ace : false};
+    const  SEVEN_SPADE : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Spade, is_ace : false};
+    const  SEVEN_CLUB : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Club, is_ace : false};
+    const  SEVEN_DIA : Card = Card {value: 7, face: CardType::Seven, suit : Suits::Diamond, is_ace : false};
+    const  SIX_SPADE : Card = Card {value: 6, face: CardType::Six, suit : Suits::Spade, is_ace : false};
+    const  SIX_HEART : Card = Card {value: 6, face: CardType::Six, suit : Suits::Heart, is_ace : false};
+    const  SIX_DIA : Card = Card {value: 6, face: CardType::Six, suit : Suits::Diamond, is_ace : false};
+    const  SIX_CLUB : Card = Card {value: 6, face: CardType::Six, suit : Suits::Club, is_ace : false};
+    const  FIVE_CLUB : Card = Card {value: 5, face: CardType::Five, suit : Suits::Club, is_ace : false};
+    const  FIVE_HEART : Card = Card {value: 5, face: CardType::Five, suit : Suits::Heart, is_ace : false};
+    const  FIVE_SPADE : Card = Card {value: 5, face: CardType::Five, suit : Suits::Spade, is_ace : false};
+    const  FIVE_DIA : Card = Card {value: 5, face: CardType::Five, suit : Suits::Diamond, is_ace : false};
+    const  FOUR_DIA : Card = Card {value: 4, face: CardType::Four, suit : Suits::Diamond, is_ace : false};
+    const  FOUR_SPADE : Card = Card {value: 4, face: CardType::Four, suit : Suits::Spade, is_ace : false};
+    const  FOUR_HEART : Card = Card {value: 4, face: CardType::Four, suit : Suits::Heart, is_ace : false};
+    const  FOUR_CLUB : Card = Card {value: 4, face: CardType::Four, suit : Suits::Club, is_ace : false};
+    const  THREE_CLUB : Card = Card {value: 3, face: CardType::Three, suit : Suits::Club, is_ace : false};
+    const  THREE_SPADE : Card = Card {value: 3, face: CardType::Three, suit : Suits::Spade, is_ace : false};
+    const  THREE_HEART : Card = Card {value: 3, face: CardType::Three, suit : Suits::Heart, is_ace : false};
+    const  THREE_DIA : Card = Card {value: 3, face: CardType::Three, suit : Suits::Diamond, is_ace : false};
+    const  TWO_DIA : Card = Card {value: 2, face: CardType::Two, suit : Suits::Diamond, is_ace : false};
+    const  TWO_HEART : Card = Card {value: 2, face: CardType::Two, suit : Suits::Heart, is_ace : false};
+    const  TWO_SPADE : Card = Card {value: 2, face: CardType::Two, suit : Suits::Spade, is_ace : false};
+    const  TWO_CLUB : Card = Card {value: 2, face: CardType::Two, suit : Suits::Club, is_ace : false};
+    const  ACE_DIA : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Diamond, is_ace : true};
+    const  ACE_HEART : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Heart, is_ace : true};
+    const  ACE_SPADE : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Spade, is_ace : true};
+    const  ACE_CLUB : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Club, is_ace : true};
 }
 
 pub struct Game {   
-    
+
 }
 
 
