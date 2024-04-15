@@ -10,6 +10,7 @@ pub fn CardList() -> Element {
         style { {include_str!("../styles/cardlist.css")} },
         div { class: "card",
             h1 { "Card Types:" }
+            
             p{ "{server::types::Deck::KING_CLUB.stringify()}" }
             p{ "{server::types::Deck::KING_HEART.stringify()}" }
             p{ "{server::types::Deck::KING_SPADE.stringify()}" }
