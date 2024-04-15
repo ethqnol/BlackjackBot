@@ -16,6 +16,7 @@ log = "0.4.19"
 dioxus-logger = "0.4.1"
 chrono = "0.4.37"
 dioxus-fullstack = "0.5.2"
+struct_iterable = "0.1.1"
 
 [features]
 default = []
