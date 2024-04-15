@@ -51,7 +51,7 @@ impl Card {
     }
     
     pub fn stringify(&self) -> String {
-        return String::from(format!("Face {}, Suit: {}, Value: {}", self.face.to_string(), self.suit.to_string(), self.value));
+        return String::from(format!("Face: {}, Suit: {}, Value: {}", self.face.to_string(), self.suit.to_string(), self.value));
     }
 }
 
@@ -112,8 +112,9 @@ impl Deck {
     pub const  ACE_CLUB : Card = Card {value: 1, face: CardType::Ace, suit : Suits::Club, is_ace : true};
 }
 
-pub struct Game {   
+pub struct Game {
 
 }
+
 
 
