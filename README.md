@@ -1,7 +1,1 @@
-
-
-Launch the Dioxus Fullstack app:
-
-```bash
-dx serve --platform fullstack
-```
+A blackjack tool for computing expected earnings and doing card counting in blackjack.
